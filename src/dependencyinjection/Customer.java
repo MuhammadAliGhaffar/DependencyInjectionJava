@@ -10,7 +10,11 @@ package dependencyinjection;
  * @author Ali
  */
 public class Customer {
-    Services services=new Services("CoolServices");
+    Services services;
+    
+    public Customer(Services services){
+        this.services=services;
+    }
     
     public String viewCustomerServices(){
         
